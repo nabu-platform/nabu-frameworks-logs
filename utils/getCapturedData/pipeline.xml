@@ -1,0 +1,12 @@
+<structure name="pipeline">
+    <structure name="input">
+        <structure collectionCrudProvider="odata" collectionName="teamsTemplates" definition="java.lang.Object" name="data"/>
+        <structure collectionName="logCaptures" definition="nabu.frameworks.logs.database.types.logTriggerCapture" maxOccurs="unbounded" minOccurs="0" name="captures"/>
+    </structure>
+    <structure name="output">
+        <structure definition="nabu.frameworks.logs.utils.basicData" maxOccurs="unbounded" minOccurs="0" name="data" restrict="id,created,logMessageId"/>
+    </structure>
+    <field name="shouldCapture" type="java.lang.Boolean"/>
+    <structure collectionCrudProvider="odata" collectionName="teamsTemplates" definition="java.lang.Object" minOccurs="0" name="result"/>
+    <structure definition="nabu.utils.types.TypeDescription" minOccurs="0" name="description"/>
+</structure>

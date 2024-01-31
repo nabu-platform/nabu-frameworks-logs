@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.data.model.DataModelManager" created="2024-01-19T18:53:42.417+01:00" lastModified="2024-01-31T11:32:15.085+01:00" leaf="true" version="72">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.logs.database.types.logMessage</references>
+    <references>nabu.frameworks.logs.database.types.logMessageData</references>
+    <references>nabu.frameworks.logs.database.types.logTrigger</references>
+    <references>nabu.frameworks.logs.database.types.logTriggerCapture</references>
+</node>

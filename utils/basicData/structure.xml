@@ -1,0 +1,1 @@
+<structure name="basicData" restrict="id,created,logMessageId" superType="nabu.frameworks.logs.database.types.logMessageData"/>

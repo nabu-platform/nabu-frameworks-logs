@@ -1,0 +1,9 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="template" type="java.lang.String"/>
+        <structure definition="nabu.frameworks.logs.utils.basicData" maxOccurs="unbounded" minOccurs="0" name="data" restrict="id,created,logMessageId"/>
+    </structure>
+    <structure name="output">
+        <field name="message" type="java.lang.String"/>
+    </structure>
+</structure>

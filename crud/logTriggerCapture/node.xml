@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.crud.CRUDArtifactManager" created="2024-01-31T11:20:26.850+01:00" lastModified="2024-01-31T11:35:45.642+01:00" leaf="false" version="5">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.logs.database.types.logTriggerCapture</references>
+    <references>nabu.services.crud.provider.basic.provider</references>
+</node>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-01-31T11:57:20.872+01:00" lastModified="2024-01-31T13:00:26.210+01:00" leaf="true" version="23">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.utils.String.substring</references>
+    <references>nabu.utils.types.TypeDescription</references>
+    <references>nabu.utils.reflection.Type.whatIs</references>
+    <references>nabu.frameworks.logs.utils.basicData</references>
+    <references>java.lang.Boolean</references>
+    <references>java.lang.Object</references>
+    <references>nabu.services.glue.Services.evaluate</references>
+    <references>nabu.data.json.Services.marshal</references>
+    <references>nabu.frameworks.logs.database.types.logTriggerCapture</references>
+    <references>nabu.utils.Stream.toString</references>
+</node>
