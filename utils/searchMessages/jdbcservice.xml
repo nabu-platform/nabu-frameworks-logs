@@ -1,0 +1,27 @@
+<jdbcService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<outputDefinition>nabu.frameworks.logs.database.types.logMessage</outputDefinition>
+	<sql>select distinct *
+from ~log_messages lm
+	join ~log_message_data lmd on lmd.log_message_id = lm.id
+where
+	(:alias is null or lm.alias = any(:alias))
+	and (:authenticationId is null or lm.authentication_id = any(:authenticationId))
+	and (:code is null or lm.code = any(:code))
+	and (:conversationId is null or lm.conversation_id = any(:conversationId))
+	and (:correlationId is null or lm.correlation_id = any(:correlationId))
+	and (:deviceId is null or lm.device_id = any(:deviceId))
+	and (:id is null or lm.id = any(:id))
+	and (:impersonatorAlias is null or lm.impersonator_alias = any(:impersonatorAlias))
+	and (:logType is null or lm.log_type = any(:logType))
+	and (:server is null or lm.server = any(:server))
+	and (:sessionId is null or lm.session_id = any(:sessionId))
+	and (:realm is null or lm.realm = any(:realm))
+	and (:impersonatorId is null or lm.impersonator_id = any(:impersonatorId))
+	and (:serviceContext is null or lm.service_context = any(:serviceContext))
+	and (:severity is null or lm.severity = any(:severity))
+	and (:triggerId is null or lm.trigger_id = any(:triggerId))
+	and (:triggerType is null or lm.trigger_type = any(:triggerType))
+	and (:since is null or lm.started &gt;= :since)
+	and (:until is null or lm.started &lt; :since)
+	and (:q is null or lower(lmd.value) like '%' || lower(:q) || '%' or lower(ld.message) like '%' || lower(:q) || '%' or lower(ld.description) like '%' || lower(:q) || '%')</sql>
+</jdbcService>

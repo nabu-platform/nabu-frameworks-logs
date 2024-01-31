@@ -1,12 +1,12 @@
 <structure collectionName="logMessages" name="logMessage">
     <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
-    <field name="started" timezone="UTC" type="java.util.Date"/>
+    <field indexed="true" name="started" timezone="UTC" type="java.util.Date"/>
     <field comment="Some events unfold over time" minOccurs="0" name="stopped" timezone="UTC" type="java.util.Date"/>
     <field comment="service, event,..." minOccurs="0" name="triggerType" type="java.lang.String"/>
     <field comment="An identifier for the type (e.g. service id)" minOccurs="0" name="triggerId" type="java.lang.String"/>
-    <field name="correlationId" type="java.lang.String"/>
-    <field minOccurs="0" name="sessionId" type="java.lang.String"/>
-    <field comment="If available the authentication id of the user who did it" minOccurs="0" name="authenticationId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field indexed="true" name="correlationId" type="java.lang.String"/>
+    <field indexed="true" minOccurs="0" name="sessionId" type="java.lang.String"/>
+    <field comment="If available the authentication id of the user who did it" indexed="true" minOccurs="0" name="authenticationId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field minOccurs="0" name="alias" type="java.lang.String"/>
     <field minOccurs="0" name="realm" type="java.lang.String"/>
     <field minOccurs="0" name="impersonatorId" type="java.lang.String"/>
@@ -18,8 +18,8 @@
     <field comment="A categorization of the log type" minOccurs="0" name="logType" type="java.lang.String"/>
     <field comment="In the case of an exception this can contain the code" minOccurs="0" name="code" type="java.lang.String"/>
     <field minOccurs="0" name="deviceId" type="java.lang.String"/>
-    <field name="severity" type="java.lang.String"/>
-    <field comment="A message can be part of a larger conversation. The root of the conversation has id == conversationId" name="conversationId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
-    <field name="server" type="java.lang.String"/>
+    <field indexed="true" name="severity" type="java.lang.String"/>
+    <field comment="A message can be part of a larger conversation. The root of the conversation has id == conversationId" indexed="true" name="conversationId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field indexed="true" name="server" type="java.lang.String"/>
     <field comment="Add an attachment if relevant" minOccurs="0" name="uri" type="java.net.URI"/>
 </structure>

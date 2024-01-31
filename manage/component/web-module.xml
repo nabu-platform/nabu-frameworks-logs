@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webModule>
+    <webFragments>nabu.frameworks.logs.crud.logMessage</webFragments>
+    <webFragments>nabu.frameworks.logs.crud.logMessageData</webFragments>
+    <webFragments>nabu.frameworks.logs.crud.logTrigger</webFragments>
+    <webFragments>nabu.frameworks.logs.crud.logTriggerCapture</webFragments>
+    <webFragments>nabu.frameworks.logs.manage.rest.trigger.refreshListeners</webFragments>
+    <webFragments>nabu.frameworks.logs.manage.rest.message.list</webFragments>
+</webModule>

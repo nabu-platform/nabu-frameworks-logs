@@ -6,6 +6,5 @@
     <field comment="You can set a condition to determine whether a particular instance should be logged or not" minOccurs="0" name="condition" type="java.lang.String"/>
     <field comment="A log message. You can use variables that have been captured to enrich it" minOccurs="0" name="message" type="java.lang.String"/>
     <field comment="A categorization of the log type" minOccurs="0" name="logType" type="java.lang.String"/>
-    <field foreignKey="nabu.frameworks.logs.database.types.logDefinition:id" name="logDefinitionId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field name="disabled" type="java.lang.Boolean"/>
 </structure>

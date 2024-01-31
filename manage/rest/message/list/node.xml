@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2024-01-31T13:38:22.748+01:00" lastModified="2024-01-31T13:52:44.821+01:00" leaf="true" version="13">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.logs.crud.logMessage.services.list</references>
+    <references>nabu.services.jdbc.Services.page</references>
+    <references>nabu.frameworks.logs.crud.logMessage.types.outputList</references>
+    <references>nabu.frameworks.logs.utils.searchMessages</references>
+</node>

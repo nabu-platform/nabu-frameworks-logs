@@ -1,0 +1,25 @@
+<structure name="query">
+    <field minOccurs="0" name="limit" type="java.lang.Long"/>
+    <field minOccurs="0" name="offset" type="java.lang.Long"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="orderBy" type="java.lang.String"/>
+    <field minOccurs="0" name="q" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="alias" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="authenticationId" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="impersonatorAlias" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="impersonatorId" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="code" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="conversationId" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="correlationId" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="deviceId" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="id" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="logType" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="server" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="sessionId" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="realm" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="serviceContext" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="severity" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="triggerId" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="triggerType" type="java.lang.String"/>
+    <field minOccurs="0" name="since" timezone="UTC" type="java.util.Date"/>
+    <field minOccurs="0" name="until" timezone="UTC" type="java.util.Date"/>
+</structure>
