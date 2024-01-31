@@ -5,8 +5,8 @@
     <field maxOccurs="unbounded" name="synchronizedConnections" type="java.lang.String"/>
     <structure collectionName="logActions" definition="nabu.frameworks.logs.database.types.logTrigger" minOccurs="0" name="trigger"/>
     <structure collectionName="logCaptures" definition="nabu.frameworks.logs.database.types.logTriggerCapture" maxOccurs="unbounded" minOccurs="0" name="captures"/>
-    <structure definition="be.nabu.libs.types.api.TypedKeyValuePair" maxOccurs="unbounded" minOccurs="0" name="captured"/>
     <structure collectionName="logMessageData" definition="nabu.frameworks.logs.database.types.logMessageData" maxOccurs="unbounded" minOccurs="0" name="data"/>
     <structure collectionName="logMessages" definition="nabu.frameworks.logs.database.types.logMessage" name="message"/>
     <field minOccurs="0" name="serviceContext" type="java.lang.String"/>
+    <structure definition="nabu.frameworks.logs.utils.basicData" maxOccurs="unbounded" minOccurs="0" name="captured" restrict="id,created,logMessageId"/>
 </structure>

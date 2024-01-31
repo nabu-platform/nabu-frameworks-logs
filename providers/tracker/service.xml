@@ -573,6 +573,15 @@
 						<from>result74531ee0bc804ca99c2081ba91cc6ddf/data</from>
 						<to>captured</to>
 					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="84e3d522d5694efd8dbe9df83515bbbc"
+							mask="false"
+							optional="false"
+							fixedValue="false">
+						<from>result74531ee0bc804ca99c2081ba91cc6ddf/data</from>
+						<to>captured</to>
+					</steps>
 				</steps>
 				<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 						disabled="false"
@@ -601,11 +610,11 @@
 						</steps>
 						<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 								disabled="false"
-								id="dfbdf3b68e834a0d86d4165a8eaf6f8c"
+								id="e7bb741dc89a4644b0e4f373798f07bf"
 								mask="false"
 								optional="false"
 								fixedValue="false">
-							<from>data</from>
+							<from>captured</from>
 							<to>data</to>
 						</steps>
 					</steps>
@@ -652,30 +661,12 @@
 						</steps>
 						<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 								disabled="false"
-								id="0b404f49af4c4ec3b4ed53f82c4a1bd4"
-								mask="false"
-								optional="false"
-								fixedValue="false">
-							<from>single/key</from>
-							<to>data[0]/name</to>
-						</steps>
-						<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-								disabled="false"
 								id="e34cd9caf52349d384231d64fdb8496d"
 								mask="false"
 								optional="false"
 								fixedValue="false">
 							<from>single/value</from>
 							<to>data[0]/value</to>
-						</steps>
-						<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-								disabled="false"
-								id="94655167243d48aeb4dbd8ef99ec2e86"
-								mask="false"
-								optional="false"
-								fixedValue="false">
-							<from>single/type</from>
-							<to>data[0]/typeId</to>
 						</steps>
 						<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 								disabled="false"
@@ -694,6 +685,24 @@
 								fixedValue="false">
 							<from>message/id</from>
 							<to>data[0]/logMessageId</to>
+						</steps>
+						<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+								disabled="false"
+								id="d1cddcfbd6a149b8b44178a9270f44ff"
+								mask="false"
+								optional="false"
+								fixedValue="false">
+							<from>single/name</from>
+							<to>data[0]/name</to>
+						</steps>
+						<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+								disabled="false"
+								id="58f5a0cebb66434d938a9770e85641ef"
+								mask="false"
+								optional="false"
+								fixedValue="false">
+							<from>single/typeId</from>
+							<to>data[0]/typeId</to>
 						</steps>
 					</steps>
 					<query>captured</query>

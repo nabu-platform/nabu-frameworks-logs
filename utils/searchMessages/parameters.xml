@@ -1,11 +1,11 @@
 <structure name="parameter">
     <field maxOccurs="unbounded" minOccurs="0" name="alias" type="java.lang.String"/>
-    <field maxOccurs="unbounded" minOccurs="0" name="authenticationId" type="java.util.UUID"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="authenticationId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field maxOccurs="unbounded" minOccurs="0" name="code" type="java.lang.String"/>
-    <field maxOccurs="unbounded" minOccurs="0" name="conversationId" type="java.util.UUID"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="conversationId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field maxOccurs="unbounded" minOccurs="0" name="correlationId" type="java.lang.String"/>
     <field maxOccurs="unbounded" minOccurs="0" name="deviceId" type="java.lang.String"/>
-    <field maxOccurs="unbounded" minOccurs="0" name="id" type="java.util.UUID"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field maxOccurs="unbounded" minOccurs="0" name="impersonatorAlias" type="java.lang.String"/>
     <field maxOccurs="unbounded" minOccurs="0" name="logType" type="java.lang.String"/>
     <field maxOccurs="unbounded" minOccurs="0" name="server" type="java.lang.String"/>
