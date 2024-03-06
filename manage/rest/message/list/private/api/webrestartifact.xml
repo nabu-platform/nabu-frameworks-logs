@@ -2,7 +2,7 @@
 <restInterface>
     <method>GET</method>
     <path>/message</path>
-    <queryParameters>limit, offset, orderBy, q, alias, authenticationId, impersonatorAlias, impersonatorId, code, conversationId, correlationId, deviceId, id, logType, server, sessionId, realm, serviceContext, severity, triggerId, triggerType, since, until</queryParameters>
+    <queryParameters>limit, offset, orderBy, q, alias, authenticationId, impersonatorAlias, impersonatorId, code, conversationId, correlationId, deviceId, id, logType, server, sessionId, realm, serviceContext, severity, triggerId, triggerType, since, until, values</queryParameters>
     <role>$user</role>
     <permissionAction>log.list</permissionAction>
     <useServiceContextAsPermissionContext>false</useServiceContextAsPermissionContext>
@@ -34,4 +34,5 @@
     <captureSuccessful>false</captureSuccessful>
     <limitedToInterface>false</limitedToInterface>
     <allowExplicitResponseCode>false</allowExplicitResponseCode>
+    <stubbed>false</stubbed>
 </restInterface>

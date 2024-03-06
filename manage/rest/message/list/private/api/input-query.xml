@@ -22,4 +22,5 @@
     <field maxOccurs="unbounded" minOccurs="0" name="triggerType" type="java.lang.String"/>
     <field minOccurs="0" name="since" timezone="UTC" type="java.util.Date"/>
     <field minOccurs="0" name="until" timezone="UTC" type="java.util.Date"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="values" type="java.lang.String"/>
 </structure>

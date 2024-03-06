@@ -23,5 +23,6 @@ where
 	and (:triggerType is null or lm.trigger_type = any(:triggerType))
 	and (:since is null or lm.started &gt;= :since)
 	and (:until is null or lm.started &lt; :since)
-	and (:q is null or lower(lmd.value) like '%' || lower(:q) || '%' or lower(lm.message) like '%' || lower(:q) || '%' or lower(lm.description) like '%' || lower(:q) || '%')</sql>
+	and (:q is null or lower(lmd.value) like '%' || lower(:q) || '%' or lower(lm.message) like '%' || lower(:q) || '%' or lower(lm.description) like '%' || lower(:q) || '%')
+	and (:data is null or lmd.value = any(:data))</sql>
 </jdbcService>

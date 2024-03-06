@@ -19,4 +19,5 @@
     <field minOccurs="0" name="since" timezone="UTC" type="java.util.Date"/>
     <field minOccurs="0" name="until" timezone="UTC" type="java.util.Date"/>
     <field minOccurs="0" name="q" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="data" type="java.lang.String"/>
 </structure>

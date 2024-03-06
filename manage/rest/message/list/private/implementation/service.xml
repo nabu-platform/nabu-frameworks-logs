@@ -5,12 +5,11 @@
 	<steps xsi:type="be.nabu.libs.services.vm.step.Switch"
 			disabled="false"
 			id="2abb4a7e01bb48318374db4ed0662b2c"
-			lineNumber="2"
-			query="input/query/q">
+			lineNumber="2">
 		<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 				disabled="false"
 				id="d551d088e2e14513b55fb2cbfa3bd26f"
-				label="null"
+				label="input/query/q == null &amp;&amp; input/query/values == null"
 				lineNumber="3">
 			<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 					disabled="false"
@@ -462,6 +461,15 @@
 						fixedValue="true">
 					<from>true</from>
 					<to>totalRowCount</to>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="8a361679f7f74996b0b6947f595f867c"
+						mask="false"
+						optional="false"
+						fixedValue="false">
+					<from>input/query/values</from>
+					<to>parameters/data</to>
 				</steps>
 			</steps>
 			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
