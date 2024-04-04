@@ -6,4 +6,5 @@
     <webFragments>nabu.frameworks.logs.crud.logTriggerCapture</webFragments>
     <webFragments>nabu.frameworks.logs.manage.rest.trigger.refreshListeners</webFragments>
     <webFragments>nabu.frameworks.logs.manage.rest.message.list</webFragments>
+    <webFragments>nabu.frameworks.logs.crud.logMessageDetail</webFragments>
 </webModule>

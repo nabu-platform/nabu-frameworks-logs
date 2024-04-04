@@ -9,4 +9,9 @@
     <structure collectionName="logMessages" definition="nabu.frameworks.logs.database.types.logMessage" name="message"/>
     <field minOccurs="0" name="serviceContext" type="java.lang.String"/>
     <structure definition="nabu.frameworks.logs.utils.basicData" maxOccurs="unbounded" minOccurs="0" name="captured" restrict="id,created,logMessageId"/>
+    <field indexed="true" maxOccurs="unbounded" minOccurs="0" name="transientData" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="logStack" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field minOccurs="0" name="currentLogId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <structure collectionName="logMessageDetails" definition="nabu.frameworks.logs.database.types.logMessageDetail" maxOccurs="unbounded" minOccurs="0" name="details"/>
+    <structure collectionName="logMessageDetails" definition="nabu.frameworks.logs.database.types.logMessageDetail" minOccurs="0" name="detail"/>
 </structure>

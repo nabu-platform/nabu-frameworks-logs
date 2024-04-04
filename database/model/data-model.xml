@@ -54,8 +54,8 @@
     <entries>
         <synchronize>true</synchronize>
         <type>nabu.frameworks.logs.database.types.logMessageData</type>
-        <x>1166</x>
-        <y>101</y>
+        <x>1180</x>
+        <y>86</y>
     </entries>
     <entries>
         <synchronize>true</synchronize>
@@ -68,5 +68,11 @@
         <type>nabu.frameworks.logs.database.types.logTriggerCapture</type>
         <x>123</x>
         <y>501</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.logs.database.types.logMessageDetail</type>
+        <x>1193</x>
+        <y>341</y>
     </entries>
 </dataModel>

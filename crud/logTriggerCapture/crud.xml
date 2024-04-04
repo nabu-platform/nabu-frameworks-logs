@@ -4,6 +4,7 @@
     <broadcastCreate>false</broadcastCreate>
     <broadcastUpdate>false</broadcastUpdate>
     <coreType>nabu.frameworks.logs.database.types.logTriggerCapture</coreType>
+    <createBlacklistFields>created</createBlacklistFields>
     <createPermission>log.manage</createPermission>
     <createRole>$user</createRole>
     <deletePermission>log.manage</deletePermission>
@@ -38,6 +39,7 @@
     <listRole>$user</listRole>
     <provider>nabu.services.crud.provider.basic.provider</provider>
     <restLimitToUser>true</restLimitToUser>
+    <updateBlacklistFields>created</updateBlacklistFields>
     <updatePermission>log.manage</updatePermission>
     <updateRole>$user</updateRole>
     <useAsAuthorizationServiceContext>false</useAsAuthorizationServiceContext>
