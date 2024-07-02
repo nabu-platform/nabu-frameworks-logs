@@ -7,5 +7,6 @@
     <structure name="output">
         <structure collectionName="logActions" definition="nabu.frameworks.logs.database.types.logTrigger" maxOccurs="unbounded" minOccurs="0" name="triggers"/>
         <structure collectionName="logCaptures" definition="nabu.frameworks.logs.database.types.logTriggerCapture" maxOccurs="unbounded" minOccurs="0" name="captures"/>
+        <structure collectionName="logTriggerClassifications" definition="nabu.frameworks.logs.database.types.logTriggerClassification" maxOccurs="unbounded" minOccurs="0" name="classifications"/>
     </structure>
 </structure>

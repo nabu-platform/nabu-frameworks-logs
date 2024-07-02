@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2024-01-19T19:02:43.574+01:00" lastModified="2024-05-10T10:22:35.360+02:00" leaf="true" version="26">
+<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2024-05-07T14:37:06.852+02:00" lastModified="2024-05-08T13:24:39.606+02:00" leaf="true" version="7">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
     <references>java.util.UUID</references>
-    <references>java.util.Date</references>
+    <references>nabu.frameworks.logs.database.types.logTrigger</references>
     <references>java.lang.String</references>
-    <references>java.net.URI</references>
     <references>be.nabu.utils.cep.api.EventSeverity</references>
 </node>

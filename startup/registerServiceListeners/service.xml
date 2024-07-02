@@ -28,12 +28,48 @@
 			</steps>
 			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 					disabled="false"
-					id="bf32f891fcde4ef8baa4db317ff0017c"
+					id="c1ce42481f5c41f2bac5ec78ef6e69cd"
 					mask="false"
 					optional="false"
 					fixedValue="true">
 				<from>true</from>
-				<to>recursive</to>
+				<to>traceProfile/descriptions</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="150301eba0d5409cad55c18d0eb8de8d"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>true</from>
+				<to>traceProfile/recursive</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="59b3276d4541450c9cf3fa12c4bce16e"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>true</from>
+				<to>traceProfile/rootServiceOnly</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="04296f61ae9c492e8b5a4ddc0aef2c94"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>true</from>
+				<to>traceProfile/services</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="c2a45386ff6c41d9b1934b5e906f4f90"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>ALL</from>
+				<to>traceProfile/trackTimeType</to>
 			</steps>
 		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
@@ -220,21 +256,57 @@
 					</steps>
 					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 							disabled="false"
-							id="5504c0605a8e455fa34f2a6f6585de70"
-							mask="false"
-							optional="false"
-							fixedValue="true">
-						<from>true</from>
-						<to>recursive</to>
-					</steps>
-					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-							disabled="false"
 							id="40200e1688b5467591e35d6ade7728b9"
 							mask="false"
 							optional="false"
 							fixedValue="false">
 						<from>serviceId</from>
 						<to>serviceId</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="d70b1c357df741f08786a2c01053a073"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>true</from>
+						<to>traceProfile/descriptions</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="c79954966123413c842bc94459c47eb9"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>true</from>
+						<to>traceProfile/recursive</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="1ba277b3711548909d16030bffe417a7"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>true</from>
+						<to>traceProfile/services</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="2f34626a0c774aed872e8921099c0c0e"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>ALL</from>
+						<to>traceProfile/trackTimeType</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="8f70531567a444f8b220f18e7c936f4a"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>true</from>
+						<to>traceProfile/rootServiceOnly</to>
 					</steps>
 				</steps>
 			</steps>
@@ -287,12 +359,48 @@
 				</steps>
 				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 						disabled="false"
-						id="8f51d559fe4443878d2d034632183aa4"
+						id="b5131b7387544b249d23d12d048222d2"
 						mask="false"
 						optional="false"
 						fixedValue="true">
 					<from>true</from>
-					<to>recursive</to>
+					<to>traceProfile/descriptions</to>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="72f78634f7044401b6a03d02926bbbda"
+						mask="false"
+						optional="false"
+						fixedValue="true">
+					<from>true</from>
+					<to>traceProfile/recursive</to>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="e99e7fcc818a44b9ae23116975f06bff"
+						mask="false"
+						optional="false"
+						fixedValue="true">
+					<from>true</from>
+					<to>traceProfile/services</to>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="98220414f7004cb2a09d083b421eb7a4"
+						mask="false"
+						optional="false"
+						fixedValue="true">
+					<from>ALL</from>
+					<to>traceProfile/trackTimeType</to>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="2f89e6b460344ad289dc6a434c1a66d9"
+						mask="false"
+						optional="false"
+						fixedValue="true">
+					<from>true</from>
+					<to>traceProfile/rootServiceOnly</to>
 				</steps>
 			</steps>
 		</steps>

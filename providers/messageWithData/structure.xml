@@ -1,0 +1,3 @@
+<structure name="messageWithData" superType="nabu.frameworks.logs.database.types.logMessage">
+    <structure definition="nabu.frameworks.logs.utils.basicData" maxOccurs="unbounded" minOccurs="0" name="data" restrict="id,created,logMessageId"/>
+</structure>

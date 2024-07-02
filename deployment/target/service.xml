@@ -1,0 +1,113 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="f389029012044c409676994fbcaa044a"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="e82f84580ee84ca783e3f0bfc1f32e64"
+			label="input/triggers"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="5632997a5c8a4313bddfadf80c85dd44"
+				serviceId="nabu.services.jdbc.Services.merge"
+				resultName="resulta2762c12a7794cb3a58c16c042efbbad"
+				temporaryMapping="true"
+				x="59"
+				y="42"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="e10ec5302a2344d98abba521cdc69912"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/connectionId</from>
+				<to>connection</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="59e7a173298846f6b0b03041b7354c4d"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/triggers</from>
+				<to>instances</to>
+			</steps>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="06591e1c21954a349c9e3acaa014efd5"
+			label="input/captures"
+			lineNumber="3">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="7e6f3fa3f870497fae1f729cf31a302e"
+				serviceId="nabu.services.jdbc.Services.merge"
+				resultName="resulta2762c12a7794cb3a58c16c042efbbad"
+				temporaryMapping="true"
+				x="59"
+				y="42"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="b2ce04a174a448f9bd13ceb07aee6610"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/connectionId</from>
+				<to>connection</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="e52c7693732845108239956699c2a048"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/captures</from>
+				<to>instances</to>
+			</steps>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="b32d0437c99d4d78a33b4c2b88a0b9b2"
+			label="input/classifications"
+			lineNumber="4">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="b8bbf182f8284b2a9cae7f3f2dc31092"
+				serviceId="nabu.services.jdbc.Services.merge"
+				resultName="resulta2762c12a7794cb3a58c16c042efbbad"
+				temporaryMapping="true"
+				x="59"
+				y="42"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="03acdc5ee7f94c31bd6a4dd6d0e0e996"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/connectionId</from>
+				<to>connection</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="9db71c8c47644229b266fb27cb4498f6"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/classifications</from>
+				<to>instances</to>
+			</steps>
+		</steps>
+	</steps>
+</sequence>

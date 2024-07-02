@@ -48,14 +48,14 @@
     <entries>
         <synchronize>true</synchronize>
         <type>nabu.frameworks.logs.database.types.logMessage</type>
-        <x>713</x>
-        <y>94</y>
+        <x>748</x>
+        <y>283</y>
     </entries>
     <entries>
         <synchronize>true</synchronize>
         <type>nabu.frameworks.logs.database.types.logMessageData</type>
         <x>1180</x>
-        <y>86</y>
+        <y>291</y>
     </entries>
     <entries>
         <synchronize>true</synchronize>
@@ -72,7 +72,13 @@
     <entries>
         <synchronize>true</synchronize>
         <type>nabu.frameworks.logs.database.types.logMessageDetail</type>
-        <x>1193</x>
-        <y>341</y>
+        <x>1189</x>
+        <y>514</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.logs.database.types.logTriggerClassification</type>
+        <x>448</x>
+        <y>79</y>
     </entries>
 </dataModel>

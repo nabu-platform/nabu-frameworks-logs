@@ -1,0 +1,9 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="connectionId" type="java.lang.String"/>
+        <structure collectionName="logTriggers" definition="nabu.frameworks.logs.database.types.logTrigger" maxOccurs="unbounded" minOccurs="0" name="triggers"/>
+        <structure collectionName="logTriggerCaptures" definition="nabu.frameworks.logs.database.types.logTriggerCapture" maxOccurs="unbounded" minOccurs="0" name="captures"/>
+        <structure collectionName="logTriggerClassifications" definition="nabu.frameworks.logs.database.types.logTriggerClassification" maxOccurs="unbounded" minOccurs="0" name="classifications"/>
+    </structure>
+    <structure name="output"/>
+</structure>

@@ -1,0 +1,10 @@
+<structure name="pipeline">
+    <structure name="input">
+        <structure collectionCrudProvider="odata" collectionName="teamsTemplates" definition="java.lang.Object" name="context"/>
+        <structure collectionName="logTriggerClassifications" definition="nabu.frameworks.logs.database.types.logTriggerClassification" maxOccurs="unbounded" minOccurs="0" name="classifications"/>
+    </structure>
+    <structure name="output">
+        <structure collectionName="logTriggerClassifications" definition="nabu.frameworks.logs.database.types.logTriggerClassification" minOccurs="0" name="classification"/>
+    </structure>
+    <field name="matches" type="java.lang.Boolean"/>
+</structure>

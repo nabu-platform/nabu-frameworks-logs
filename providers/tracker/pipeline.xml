@@ -14,4 +14,10 @@
     <field minOccurs="0" name="currentLogId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <structure collectionName="logMessageDetails" definition="nabu.frameworks.logs.database.types.logMessageDetail" maxOccurs="unbounded" minOccurs="0" name="details"/>
     <structure collectionName="logMessageDetails" definition="nabu.frameworks.logs.database.types.logMessageDetail" minOccurs="0" name="detail"/>
+    <structure collectionName="logTriggerClassifications" definition="nabu.frameworks.logs.database.types.logTriggerClassification" maxOccurs="unbounded" minOccurs="0" name="classifications"/>
+    <structure collectionName="logTriggerClassifications" definition="nabu.frameworks.logs.database.types.logTriggerClassification" minOccurs="0" name="classification"/>
+    <structure definition="be.nabu.utils.cep.impl.ComplexEventImpl" name="event"/>
+    <structure definition="nabu.utils.types.ExceptionSummary" minOccurs="0" name="exceptionSummary"/>
+    <structure definition="nabu.utils.reflection.properties.propertyList" name="propertyList"/>
+    <structure definition="nabu.utils.types.Property" minOccurs="0" name="property"/>
 </structure>

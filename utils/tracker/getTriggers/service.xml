@@ -117,5 +117,80 @@
 			<from>result07e6a4c55fae4f919445073481bbdef6/results</from>
 			<to>output/captures</to>
 		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="627d383c02064fa5b94e3d9441c8ef3f"
+				serviceId="nabu.frameworks.logs.crud.logTriggerClassification.services.list"
+				resultName="result957e4813256e489f9c9bf37f700f4810"
+				temporaryMapping="true"
+				x="293"
+				y="145"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="f745f9dd73304170aa09667406ba44ad"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>output/triggers/id</from>
+				<to>filter/logTriggerId</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="69c299378bd9443b81cc378a1c728c0f"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result957e4813256e489f9c9bf37f700f4810/results</from>
+			<to>output/classifications</to>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="99fe9e5ccc7c4bbba11b903e40fd98ef"
+			label="output/classifications"
+			lineNumber="4">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="b05b2de73bac41e0bca402b6be47953c"
+				serviceId="nabu.utils.List.sort"
+				resultName="result052b5b8648c848a689e7c5b2a4e2d9c3"
+				temporaryMapping="true"
+				x="123"
+				y="145"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="dbf0f059ed3c45079ca0f58ba42eec14"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>output/classifications</from>
+				<to>list</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="160c0defbb5c4a9dbc94605267d8b692"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>priority desc</from>
+				<to>fields[0]</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="5a6378d6d6304cf892af75a632cf214b"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result052b5b8648c848a689e7c5b2a4e2d9c3/list</from>
+			<to>output/classifications</to>
+		</steps>
 	</steps>
 </sequence>

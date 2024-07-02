@@ -1,0 +1,103 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="78c672fefd274f8993dcc37d49e083c2"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.For"
+			disabled="false"
+			id="59997bcfacd04f289fe2a111506de894"
+			lineNumber="2"
+			variable="classification">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Switch"
+				disabled="false"
+				id="4a9c8a7a83b8437783db282736861e51"
+				lineNumber="3">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+					disabled="false"
+					id="f5fb5c06509d4939bab5d2f94ea5dd6a"
+					label="classification/condition != null"
+					lineNumber="4">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+						disabled="false"
+						id="8b2f917733374108bb8d3a0d2e39a4ac"
+						serviceId="nabu.services.glue.Services.evaluate"
+						resultName="result18f8ead8ffc741028cbccb09865a34f3"
+						temporaryMapping="true"
+						x="309"
+						y="104"
+						invocationOrder="0"
+						asynchronous="false"
+						recache="false">
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="eabfa3e18cb74b4fbf2375f5d43a471b"
+							mask="false"
+							optional="false"
+							fixedValue="false">
+						<from>classification/condition</from>
+						<to>rule</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="cb85502f9bdf43329a3bf7683cbcf759"
+							mask="false"
+							optional="false"
+							fixedValue="false">
+						<from>input/context</from>
+						<to>context[0]</to>
+					</steps>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="112636a253e74b50993e4c2107c8c4f5"
+						mask="false"
+						optional="false"
+						fixedValue="false">
+					<from>result18f8ead8ffc741028cbccb09865a34f3/response</from>
+					<to>matches</to>
+				</steps>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+					disabled="false"
+					id="b53ad3d0588540a7b61990cf8da76d17"
+					lineNumber="5">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="7955adecdc484c1bbde9fe4738d0fa25"
+						mask="false"
+						optional="false"
+						fixedValue="true">
+					<from>true</from>
+					<to>matches</to>
+				</steps>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Sequence"
+				disabled="false"
+				id="7baa4403ec7c4df182a63dc530a77da3"
+				label="matches"
+				lineNumber="6">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+					comment="Map output"
+					disabled="false"
+					id="b94e5f8b3fb745f8a740af12a36b2bb3"
+					lineNumber="7">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="6529bb12a5924443924d664d41c1edec"
+						mask="false"
+						optional="false"
+						fixedValue="false">
+					<from>classification</from>
+					<to>output/classification</to>
+				</steps>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Break"
+					disabled="false"
+					id="76ab52d73da7428db576f504543ee087"
+					lineNumber="8">
+				<count>2</count>
+			</steps>
+		</steps>
+		<query>input/classifications</query>
+	</steps>
+</sequence>

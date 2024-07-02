@@ -1,7 +1,8 @@
 <structure collectionName="logTriggers" name="logTrigger">
     <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
     <field indexed="true" name="created" timezone="UTC" type="java.util.Date"/>
-    <field name="name" type="java.lang.String"/>
+    <field minOccurs="0" name="name" type="java.lang.String"/>
+    <field minOccurs="0" name="category" type="java.lang.String"/>
     <field comment="service, event,..." name="triggerType" type="java.lang.String"/>
     <field comment="An identifier for the type (e.g. service id)" name="triggerId" type="java.lang.String"/>
     <field comment="You can set a condition to determine whether a particular instance should be logged or not" minOccurs="0" name="condition" type="java.lang.String"/>

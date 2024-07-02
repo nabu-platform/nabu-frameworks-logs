@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <webModule>
+    <path>/logs</path>
     <webFragments>nabu.frameworks.logs.crud.logMessage</webFragments>
     <webFragments>nabu.frameworks.logs.crud.logMessageData</webFragments>
     <webFragments>nabu.frameworks.logs.crud.logTrigger</webFragments>
@@ -7,4 +8,5 @@
     <webFragments>nabu.frameworks.logs.manage.rest.trigger.refreshListeners</webFragments>
     <webFragments>nabu.frameworks.logs.manage.rest.message.list</webFragments>
     <webFragments>nabu.frameworks.logs.crud.logMessageDetail</webFragments>
+    <webFragments>nabu.frameworks.logs.crud.logTriggerClassification</webFragments>
 </webModule>

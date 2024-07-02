@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-01-31T11:12:13.767+01:00" lastModified="2024-05-07T15:09:20.176+02:00" leaf="true" version="19">
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-05-14T12:19:31.771+02:00" lastModified="2024-05-14T12:20:38.353+02:00" leaf="true" version="5">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
     <references>nabu.frameworks.logs.crud.logTrigger.services.list</references>
-    <references>nabu.utils.List.sort</references>
     <references>nabu.frameworks.logs.database.types.logTriggerClassification</references>
     <references>nabu.frameworks.logs.crud.logTriggerCapture.services.list</references>
     <references>nabu.frameworks.logs.crud.logTriggerClassification.services.list</references>
