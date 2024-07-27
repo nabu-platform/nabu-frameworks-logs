@@ -1964,15 +1964,6 @@
 					</steps>
 					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 							disabled="false"
-							id="8629cc540d6f4691b55006e425b89057"
-							mask="false"
-							optional="false"
-							fixedValue="false">
-						<from>input/started</from>
-						<to>detail/created</to>
-					</steps>
-					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-							disabled="false"
 							id="c9a14262ab714792847a0d5e4a3cf984"
 							mask="false"
 							optional="false"
@@ -2009,6 +2000,27 @@
 							fixedValue="false">
 						<from>resultc23f075f1a9c4016975f60aad22560c2/string</from>
 						<to>detail/detail</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+							disabled="false"
+							id="91d1cddc064e4924b19e0deed2c8d7d0"
+							serviceId="nabu.utils.Date.now"
+							resultName="result08351b9be9e84c6a8feb8badf1f0f91b"
+							temporaryMapping="true"
+							x="226"
+							y="350"
+							invocationOrder="0"
+							asynchronous="false"
+							recache="false">
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="73910d9839a74cd8aad9463f8693ffa1"
+							mask="false"
+							optional="false"
+							fixedValue="false">
+						<from>result08351b9be9e84c6a8feb8badf1f0f91b/date</from>
+						<to>detail/created</to>
 					</steps>
 				</steps>
 				<steps xsi:type="be.nabu.libs.services.vm.step.Map"
