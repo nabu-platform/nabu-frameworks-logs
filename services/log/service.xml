@@ -46,16 +46,16 @@
 	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 			disabled="false"
 			id="b9e0cc3e4e3140a49163e18498a95c5e"
-			label="input/conversationId == null"
+			label="input/batchId == null"
 			lineNumber="4">
 		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 				disabled="false"
-				id="3d148e4bd8384d68b6dec00ac6200e8b"
+				id="f53cecf0c56f4c04b9e7467dbc02193d"
 				mask="false"
 				optional="false"
 				fixedValue="false">
 			<from>uuid</from>
-			<to>input/conversationId</to>
+			<to>input/batchId</to>
 		</steps>
 	</steps>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
@@ -273,15 +273,6 @@
 			</steps>
 			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 					disabled="false"
-					id="b6694bbeaa4d41cbbd43523db9093f60"
-					mask="false"
-					optional="false"
-					fixedValue="false">
-				<from>input/conversationId</from>
-				<to>instance/conversationId</to>
-			</steps>
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
 					id="272135f2c19549d391d5824157504a29"
 					mask="false"
 					optional="false"
@@ -297,6 +288,33 @@
 					fixedValue="false">
 				<from>input/category</from>
 				<to>instance/category</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="b75c8097d4104d7f91b17fc994a5705a"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/batchId</from>
+				<to>instance/batchId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="917e41c5a7e946d795a2d037baaf7284"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>result0fcbf421b2b94531bcf9a86a25eee052/conversationId</from>
+				<to>instance/conversationId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="e0d869ebd41e43bc8959022b7d4dd091"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>resultc96a2f64874c465bbf42d1b0eaff007a/narrativeId</from>
+				<to>instance/narrativeId</to>
 			</steps>
 		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
@@ -406,21 +424,45 @@
 		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 				disabled="false"
-				id="90f933e40ba04880baaedafdadadd74a"
-				mask="false"
-				optional="false"
-				fixedValue="false">
-			<from>input/conversationId</from>
-			<to>output/conversationId</to>
-		</steps>
-		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-				disabled="false"
 				id="e5ae70fb9c1f499c98f459e51a135b2f"
 				mask="false"
 				optional="false"
 				fixedValue="false">
 			<from>result413dd80b9e724c9d973c23ffbd7ecb81/date</from>
 			<to>date</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="4ad933ac2a474b649e26d6e6bce9454e"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>input/batchId</from>
+			<to>output/batchId</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="f6ce20ded18b4500b9df928f7feb2ce8"
+				serviceId="nabu.utils.Runtime.getConversationId"
+				resultName="result0fcbf421b2b94531bcf9a86a25eee052"
+				temporaryMapping="true"
+				x="61"
+				y="741"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="d4cc1641f1ca4d4d88b900f3a2add43b"
+				serviceId="nabu.utils.Runtime.getNarrativeId"
+				resultName="resultc96a2f64874c465bbf42d1b0eaff007a"
+				temporaryMapping="true"
+				x="190"
+				y="825"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
 		</steps>
 	</steps>
 	<steps xsi:type="be.nabu.libs.services.vm.step.For"

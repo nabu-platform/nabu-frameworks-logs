@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-01-31T11:32:29.673+01:00" lastModified="2025-01-22T11:13:15.877+01:00" leaf="true" version="26">
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-01-31T11:32:29.673+01:00" lastModified="2025-02-10T14:37:03.483+01:00" leaf="true" version="31">
     <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
@@ -13,11 +13,13 @@
     <references>java.util.UUID</references>
     <references>nabu.utils.Runtime.getServiceContext</references>
     <references>nabu.utils.Runtime.getCurrentDevice</references>
+    <references>nabu.utils.Runtime.getNarrativeId</references>
     <references>nabu.utils.Runtime.getService</references>
     <references>nabu.frameworks.logs.database.types.logMessageData</references>
     <references>nabu.utils.Server.getServerName</references>
     <references>nabu.services.jdbc.Services.insert</references>
     <references>nabu.utils.Runtime.getCorrelationId</references>
+    <references>nabu.utils.Runtime.getConversationId</references>
     <references>nabu.frameworks.logs.crud.logMessage.services.create</references>
     <references>java.lang.String</references>
     <references>java.net.URI</references>
