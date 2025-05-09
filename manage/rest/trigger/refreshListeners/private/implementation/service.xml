@@ -15,6 +15,7 @@
 				x="195"
 				y="104"
 				invocationOrder="0"
+				target="$all"
 				asynchronous="false"
 				recache="false">
 		</steps>
