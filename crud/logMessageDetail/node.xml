@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.services.crud.CRUDArtifactManager" created="2024-03-08T08:44:33.026+01:00" lastModified="2024-03-08T08:45:33.674+01:00" leaf="false" version="6">
-    <environmentId>apollo</environmentId>
+<node artifactManager="be.nabu.eai.module.services.crud.CRUDArtifactManager" created="2024-03-08T08:44:33.026+01:00" lastModified="2025-08-26T12:21:59.913+02:00" leaf="false" version="7">
+    <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>

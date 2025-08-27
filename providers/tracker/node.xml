@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-01-30T16:04:55.022+01:00" lastModified="2024-07-24T14:24:28.805+02:00" leaf="true" version="96">
-    <environmentId>apollo</environmentId>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-01-30T16:04:55.022+01:00" lastModified="2025-08-26T12:21:59.954+02:00" leaf="true" version="98">
+    <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
@@ -12,6 +12,7 @@
     <references>nabu.utils.Object.toString</references>
     <references>nabu.utils.types.ExceptionSummary</references>
     <references>nabu.frameworks.logs.database.types.logMessageData</references>
+    <references>nabu.utils.Runtime.getSessionId</references>
     <references>nabu.frameworks.logs.database.types.logMessage</references>
     <references>java.lang.Long</references>
     <references>nabu.frameworks.logs.database.types.logTriggerClassification</references>
@@ -46,7 +47,6 @@
     <references>nabu.frameworks.logs.utils.classify</references>
     <references>nabu.frameworks.logs.utils.tracker.resolveMessage</references>
     <references>nabu.utils.Date.now</references>
-    <references>nabu.web.application.Services.getSessionId</references>
     <references>nabu.utils.Object.first</references>
     <references>nabu.utils.Runtime.getCorrelationId</references>
     <references>nabu.frameworks.logs.database.types.logTrigger</references>
